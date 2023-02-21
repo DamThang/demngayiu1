@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(199, 80, 137);
+  background: #FF0099 ;
   min-height: 100vh;
 }
 
@@ -161,4 +161,26 @@ body {
 
 .sup-time {
   font-weight: 300;
+}
+.heart1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  animation: heart-fly 2s infinite;
+}
+
+@keyframes heart-fly {
+  0% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
 }

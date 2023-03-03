@@ -7,7 +7,7 @@ document.addEventListener(
     var second = document.querySelector(".second");
     var d= new Date();
     var startDate = new Date(2022, 06, 30);
-    var startDate1 = new Date(d.getFullYear(),d.getMonth()+1, d.getDate()+3);
+    var startDate1 = new Date(d.getFullYear(),d.getMonth()+1, d.getDate());
     days.innerText = Math.floor((startDate1 - startDate) / 86400000);
     countTime();
 
